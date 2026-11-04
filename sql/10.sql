@@ -9,3 +9,21 @@
  * HINT:
  * I used the `ntile` window function to compute the percentile.
  */
+
+WITH spending AS (
+    SELECT customer_id, sum(amount) AS total_payment
+    FROM payment
+    GROUP BY customer_id
+),
+percentiles AS (
+    SELECT c.customer_id,
+           c.first_name || ' ' || c.last_name AS name,
+           s.total_payment,
+           ntile(100) OVER (ORDER BY s.total_payment) AS percentile
+    FROM customer c
+    JOIN spending s ON c.customer_id = s.customer_id
+)
+SELECT customer_id, name, total_payment, percentile
+FROM percentiles
+WHERE percentile >= 90
+ORDER BY name;
