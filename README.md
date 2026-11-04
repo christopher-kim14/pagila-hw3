@@ -1,5 +1,5 @@
 # pagila-hw3
-[![](https://github.com/mikeizbicki/pagila-hw3/workflows/tests/badge.svg)](https://github.com/mikeizbicki/pagila-hw3/actions?query=workflow%3Atests)
+[![](https://github.com/christopher-kim14/pagila-hw3/workflows/tests/badge.svg)](https://github.com/christopher-kim14/pagila-hw3/actions?query=workflow%3Atests)
 
 ## Tasks
 
@@ -131,7 +131,7 @@
     > A common complaint from industry about newly graduated data science students is that they don't know how to version control data.
     > One of the purposes of this assignment is to familiarize you with this concept.
 
-1. Complete the test cases in the same way that you did for the [pagila-hw](https://github.com/mikeizbicki/pagila-hw) assignment.
+1. Complete the test cases in the same way that you did for the [pagila-hw](https://github.com/christopher-kim14/pagila-hw) assignment.
 
     > **NOTE:**
     > When you upload to github,
